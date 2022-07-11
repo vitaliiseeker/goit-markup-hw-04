@@ -10,7 +10,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
-  <title>Портфолио</title>
+  <title>WebStudio-Портфолио</title>
 </head>
 
 <body>
@@ -27,9 +27,17 @@
       </nav>
       <ul class="info list">
         <li class="item">
-          <a class="link mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="link mail" href="mailto:info@devstudio.com">
+            <svg class="icon-info">
+              <use href="./images/sprite.svg#icon-envelope" width="16px" height="12px"></use>
+            </svg>info@devstudio.com</a>
         </li>
-        <li class="item"><a class="link tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="item">
+          <a class="link tel" href="tel:+380961111111">
+            <svg class="icon-info">
+              <use href="./images/sprite.svg#icon-smartphone" width="10" height="16"></use>
+            </svg>+38 096 111 11 11</a>
+        </li>
       </ul>
     </div>
   </header>
@@ -99,7 +107,7 @@
   <!-- Футер -->
   <footer class="footer">
     <div class="container">
-      <div>
+      <div class="footer-adress-box">
         <a class="logo" href="./index.html"><span class="accent">Web</span>Studio</a>
         <address>
           <ul class="footer-address list">
@@ -116,9 +124,38 @@
           </ul>
         </address>
       </div>
-      <div class="social">
-        <h1 class="social-title">Присоединяйтесь</h1>
-        <img src="./images/social links-f.svg" alt="Присоединяйтесь" width="206" height="44" />
+      <div class="footer-social-networks">
+        <h2 class="social-networks-title">Присоединяйтесь</h1>
+          <ul class="social-networks-list">
+            <li class="social-networks-item">
+              <a href="" class="link social-networks">
+                <svg class="team-social-networks-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks-item">
+              <a href="" class="link social-networks">
+                <svg class="team-social-networks-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks-item">
+              <a href="" class="link social-networks">
+                <svg class="team-social-networks-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks-item">
+              <a href="" class="link social-networks">
+                <svg class="team-social-networks-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
       </div>
     </div>
   </footer>
