@@ -5,7 +5,9 @@
   --primary-background-color: #e5e5e5;
   --secondary-background-color: #2f303a;
   --background-header-color: #fff;
+  --background-banner-color: #C4C4C4;
   --backgruund-btn-filter-color: #f5f4fa;
+  --backgraund-feature-icon-color: #f5f4fa;
   --background-team-color: #f5f4fa;
   --background-team-card-color: #fff;
   --background-clients-color: #AFB1B8;
@@ -26,8 +28,8 @@
   --footer-address-link-color: rgba(255, 255, 255, 0.6);
   --work-exampl-border-color: #eee;
   --header-line-color: #ececec;
-  --icon-color: #AFB1B8;
-  --icon-wwhite-color: #fff;
+  --primary-icon-color: #AFB1B8;
+  --secondary-icon-color: #fff;
 }
 
 html {
@@ -76,6 +78,8 @@ address {
   font-style: normal;
 }
 
+/* ---------------------  ГЛОБАЛЬНЫЕ КЛАССЫ --------------------------*/
+
 body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -104,7 +108,7 @@ body {
   text-align: center;
 }
 
-/* Шапка */
+/* ---------------------  ШАПКА --------------------------*/
 
 .header .container {
   display: flex;
@@ -184,7 +188,7 @@ body {
   fill: currentColor;
 }
 
-/* Баннер */
+/* ---------------------  БАННЕР  --------------------------*/
 
 .banner {
   max-width: 1600px;
@@ -194,7 +198,7 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: var(--secondary-background-color);
+  background-color: var(--background-banner-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/banner.jpg');
   background-repeat: no-repeat;
@@ -215,7 +219,7 @@ body {
   color: var(--accent-text-background-color);
 }
 
-/* Кнопка баннера */
+/* ---------------------  КНОПКА БАННЕРА  --------------------------*/
 
 .button-header {
   width: 200px;
@@ -233,7 +237,7 @@ body {
   cursor: pointer;
 }
 
-/* Наши преимущества */
+/* ---------------------  НАШИ ПРЕИМУЩЕСТВА  --------------------------*/
 
 .visually-hidden {
   position: absolute;
@@ -267,14 +271,11 @@ body {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
-  background: #F5F4FA;
+  background-color: var(--backgraund-feature-icon-color);
   border-radius: 4px;
 }
 
-.feature-icon {
-  width: 70px;
-  height: 70px;
-}
+.feature-icon {}
 
 .feature-title {
   margin-bottom: 10px;
@@ -291,8 +292,7 @@ body {
   color: var(--secondary-text-color);
 }
 
-
-/* Чем мы занимаемся */
+/* ---------------------  ЧЕМ ЗАНИМАЕМСЯ  --------------------------*/
 
 .directions {
   padding-top: 0;
@@ -310,7 +310,7 @@ body {
   margin-left: 30px;
 }
 
-/* Наша команда */
+/* ---------------------  НАША КОМАНДА  --------------------------*/
 
 .team {
   background-color: var(--background-team-color);
@@ -384,7 +384,7 @@ body {
 .team-social-networks-icon {
   width: 20px;
   height: 20px;
-  fill: var(--icon-color);
+  fill: var(--primary-icon-color);
 }
 
 .social-networks-networks-item:focus,
@@ -394,10 +394,10 @@ body {
 
 .social-networks-item:focus .team-social-networks-icon,
 .social-networks-item:hover .team-social-networks-icon {
-  fill: var(--icon-wwhite-color);
+  fill: var(--secondary-icon-color);
 }
 
-/*Постоянные клиенты */
+/* ---------------------  ПОСТОЯННЫЕ КЛИЕНТЫ  --------------------------*/
 
 .clients {
   background-color: var(--primary-background-color);
@@ -411,28 +411,26 @@ body {
   display: flex;
 }
 
-.client>.item {
+.client .item {
   width: 170px;
   height: 92px;
-  border: 1px solid var(--icon-color);
+  border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
-  cursor: pointer;
 }
 
-.client .item+.item {
+.client>.item+.item {
   margin-left: 30px;
 }
 
 .client-brand {
-  display: flex;
-  padding: 16px 32px;
-  text-decoration: none;
+  display: block;
+  padding: 14px 32px;
 }
 
 .icon-brand {
   width: 106px;
   height: 60px;
-  fill: var(--icon-color);
+  fill: var(--primary-icon-color);
 }
 
 .client>.item:hover,
@@ -445,7 +443,7 @@ body {
   fill: var(--accent-color);
 }
 
-/* Футер */
+/* ---------------------  ФУТЕР  --------------------------*/
 
 .footer {
   padding-top: 60px;
@@ -480,7 +478,6 @@ body {
   color: var(--accent-text-background-color);
 }
 
-
 .link.info:focus,
 .link.info:hover {
   color: var(--accent-color);
@@ -494,7 +491,6 @@ body {
 .footer-social-networks .social-networks-list {
   justify-content: start;
 }
-
 
 .social-networks-title {
   margin-bottom: 20px;
@@ -510,9 +506,8 @@ body {
 }
 
 .footer-social-networks .team-social-networks-icon {
-  fill: var(--icon-wwhite-color);
+  fill: var(--secondary-icon-color);
 }
-
 
 .social-networks-networks-item:focus,
 .social-networks-item:hover {
@@ -520,9 +515,9 @@ body {
 }
 
 
-/* Потфолио */
+/* --------------------  ПОРТФОЛИО  --------------------------*/
 
-/* Фильтр */
+/* ---------------------  ФИЛЬТР --------------------------*/
 
 .filter.list {
   display: flex;
@@ -543,12 +538,13 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--backgruund-btn-filter-color);
-  /* border-color: var(--backgruund-btn-filter-color); */
   border-radius: 4px;
   border: none;
+  outline: none;
   cursor: pointer;
 }
 
+.filter>.item:nth-child(1) .btn-filter,
 .active,
 .btn-filter:focus,
 .btn-filter:hover {
@@ -559,7 +555,9 @@ body {
     0px 2px 2px var(--shadow-three-btn-filter-color);
 }
 
-/* Примеры работ */
+.filter .item:first-child .btn-filter {}
+
+/* ---------------------  ПРИМЕРЫ РАБОТ  --------------------------*/
 
 .work-examples {
   display: flex;
@@ -582,11 +580,12 @@ body {
   margin-bottom: 0;
 }
 
+.work-exampl-box {
+  padding: 20px 24px;
+}
+
 .work-name {
   margin-bottom: 4px;
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -594,9 +593,6 @@ body {
 }
 
 .work-type {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.88;
@@ -609,3 +605,11 @@ body {
     0px 4px 4px var(--shadow-two-work-exampl-color),
     1px 4px 6px var(--shadow-three-work-exampl-color);
 }
+
+/* ---------------------  ХХХ  --------------------------*/
+
+
+/* ---------------------  ХХХ --------------------------*/
+
+
+/* ---------------------  ХХХ  --------------------------*/
